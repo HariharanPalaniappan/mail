@@ -1,0 +1,149 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  background-color: #001F4F;
+  .header {
+    max-width: 100%;
+    padding: 10px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    .search {
+      width: 500px;
+      height: 30px;
+      border-radius: 10px;
+    }
+    span {
+      text-transform: capitalize;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      &:first-child {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      &:last-child {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: #fff;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    .side-bar {
+      width: 15%;
+      height: 90vh;
+      .compose-btn {
+        padding: 12px 37px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 28px auto;
+        display: flex;
+        border: 1px solid #fff;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          width: 175px;
+          padding: 12px 0;
+          color: #fff;
+          text-align: center;
+          margin-bottom: 2px;
+          border-radius: 0px 10px 10px 0px;
+          &.active,&:hover{
+            color: #000;
+            background: #fff;
+          }
+        }
+      }
+    }
+    .main {
+      width: 85%;
+      height: 90vh;
+      display: flex;
+      .mail-list {
+        background-color: #fff;
+        border-radius: 10px 10px 0px 0px;
+        height: 100%;
+        width: 30%;
+        overflow: auto;
+      }
+      .mail-detailed {
+        width: 70%;
+        height: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  background-color: #D3E9FD;
+  margin-bottom: 1px;
+  padding: 0 20px;
+  .mail-details {
+    color: #001F4F;
+    p {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;    
+    }
+  }
+  span {
+    font-size: 12px;
+  }
+}
+.details-container {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  height: 100%;
+  .status-bar {
+    .profile-container {
+      display: flex;
+      align-items: center;
+      >span {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: #fff;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        margin-left: 10px;
+        p {
+          margin: 0;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        span {
+          font-size: 14px;
+          color: #FFFFFF80;
+        }
+      }
+    }
+  }
+  .message-datails {
+    margin-top: 35px;
+    margin-left: 40px;
+    font-size: 13px;
+  }
+}
